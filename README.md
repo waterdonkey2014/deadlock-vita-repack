@@ -1,6 +1,6 @@
 # Deadlock for PS Vita: the repack app (unofficial)
 
-**Status: planning. Nothing released yet.** The first public build, V1, will be the first one that boots and loads a map.
+**Status: planning. Nothing released yet.** The first public build, Kit 3, will be the first one that boots and loads a map.
 
 An unofficial fan project. The repack app turns **your own** installed copy of Deadlock (PC or Mac) into a pack for the PS Vita,
 played on our own Vita engine.
@@ -10,14 +10,14 @@ played on our own Vita engine.
 - **Not affiliated with or endorsed by Valve.** Deadlock is a trademark of Valve Corporation.
 
 ## How releases will work
-- From V1 on, a new build comes out with every kit (roughly one a week). Each release has notes, a "what to test this week" list and
+- From Kit 3 on, a new build comes out with every kit (roughly one a week), named by its kit number. Each release has notes, a "what to test this week" list and
   known issues.
 - The repack app updates itself from this repo's Releases and tells you when a new Vita build is ready.
 - **You** copy the pack to the Vita (USB or VitaShell FTP) and install it in VitaShell. The Vita never downloads or installs anything
   by itself.
 - When there's online play, it is against bots, Vita-to-Vita, and servers run by this project.
 
-## What you'll need (once V1 is out)
+## What you'll need (once Kit 3 is out)
 - A PS Vita running homebrew (HENkaku / Ensō) with VitaShell.
 - `libshacccg.suprx` extracted on your own Vita with ShaRKF00D (the app's guide walks you through it).
 - Your own Deadlock install on PC or Mac.

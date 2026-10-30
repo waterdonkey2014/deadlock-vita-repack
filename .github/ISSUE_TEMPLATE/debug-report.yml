@@ -1,6 +1,6 @@
 name: Debug report
 description: Report what happened in a test build.
-title: "[V?] "
+title: "[Kit ?] "
 labels: ["report"]
 body:
   - type: markdown
@@ -12,8 +12,8 @@ body:
     id: version
     attributes:
       label: Build
-      description: The V number of the build you tested.
-      placeholder: V1
+      description: The kit number of the build you tested.
+      placeholder: Kit 3
     validations:
       required: true
   - type: input
