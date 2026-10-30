@@ -1,0 +1,75 @@
+name: Debug report
+description: Report what happened in a test build.
+title: "[V?] "
+labels: ["report"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for testing! Reports are **public**: don't include personal info, and never attach game files.
+        The repack app fills in most of this for you and makes the report zip.
+  - type: input
+    id: version
+    attributes:
+      label: Build
+      description: The V number of the build you tested.
+      placeholder: V1
+    validations:
+      required: true
+  - type: input
+    id: game_build
+    attributes:
+      label: Deadlock game build
+      description: Shown in the repack app.
+  - type: input
+    id: pack_hash
+    attributes:
+      label: Pack hash
+      description: Shown in the repack app.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Boot / loading
+        - Graphics
+        - Performance
+        - Controls
+        - Audio
+        - Gameplay
+        - Online
+        - Repack app
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Which of this week's tests did you run?
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+  - type: input
+    id: plugins
+    attributes:
+      label: Vita plugins and clock
+      description: The repack app fills this in from the log (e.g. PSVshellPlus profile, CapUnlocker, Wi-Fi Turbo profile, measured MHz).
+  - type: textarea
+    id: zip
+    attributes:
+      label: Report zip
+      description: Drag the zip from the repack app here.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you post
+      options:
+        - label: No personal info and no game files in this report.
+          required: true
